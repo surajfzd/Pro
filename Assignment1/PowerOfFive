@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class PowerOfFive {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		int n,i,prod=1;
+		System.out.println("Enter a number");
+		n=sc.nextInt();
+		
+		for(i=0; i<20; i++)
+		{
+			prod=prod*5;
+			if(prod==n)
+			{
+				++i;
+				System.out.println("True "+i);
+				break;
+			}
+			if(prod>n)
+			{
+				System.out.println("False");
+				break;
+			}
+		}
+	}
+
+}
