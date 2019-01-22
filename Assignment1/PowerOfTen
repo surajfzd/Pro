@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class PowerOfTen {
+public static void main(String args[])
+{
+	
+	int n,i,prod=1, count=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter number");
+	n=sc.nextInt();
+	for(i=0; i<20; i++)
+	{
+		prod=prod*10;
+		count++;
+		if(prod == n)
+		{
+			System.out.println("Power: "+ count);
+			break;
+		}
+		if(prod>n)
+		{
+			System.out.println("not power of 10");
+			break;
+		}
+	}
+	
+	
+	
+}
+}
