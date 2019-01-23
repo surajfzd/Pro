@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class ReverseString 
+{
+	public static void main(String[] args) 
+	{
+		char ch;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a string");
+		String st = sc.nextLine();
+		
+		int len=st.length();
+		for(int i=len-1; i>=0; i--)
+		{
+			ch=st.charAt(i);
+			System.out.print(ch);
+		}
+		
+	}
+
+}
