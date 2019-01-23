@@ -1,0 +1,40 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Panagram {
+
+	public static void main(String[] args)
+	{	int flag=0;
+		String st="";
+		String st1="abcdefghijklmnopqrstuvwxyx";
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a string");
+		st=sc.nextLine();
+		
+		char[] ch=st.toCharArray();
+		Arrays.sort(ch);
+		
+		String st2=String.valueOf(ch);
+		int l=st2.length();
+		for(int i=0; i<26; i++)
+		{
+			 for(int j=0; j<l; j++)
+			 {
+				 if(st1.charAt(i)!=st2.charAt(j))
+				 {
+					flag=1; 
+					 break;
+				 }
+			 }
+		}
+		if(flag==1)
+		{
+			System.out.println("Not a Panagram");
+		}
+		else
+		{
+			System.out.println("Panagram");
+		}
+		
+	}
+
+}
