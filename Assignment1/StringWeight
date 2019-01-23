@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class WeightOfString {
+
+	public static void main(String[] args) 
+	{
+		int sum=0;
+		String st = "";
+		Scanner sc=new Scanner(System.in);
+		st=sc.nextLine();
+	    st = st.replace(" ", "");
+	    char[] c = st.toCharArray();
+
+	    for (char ss : c)
+	    {    
+	    	sum+=ss-'a'+1;
+	    }
+	    System.out.println(sum);
+	}
+
+}
