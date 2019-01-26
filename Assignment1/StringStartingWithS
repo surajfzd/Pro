@@ -1,0 +1,22 @@
+
+public class StartingChar {
+
+	public static void main(String[] args) {
+		String[] st= {"Chaudhary", "Suraj", "Pratap", "Singh", "Tangar"};
+		char ch;
+		for(int i=0; i<st.length; i++)
+		{
+				
+				if(st[i].charAt(0)=='s' | st[i].charAt(0)=='S')
+				{
+					System.out.print(st[i]);
+				}
+			
+			System.out.print(" ");
+			
+			
+		}
+
+	}
+
+}
