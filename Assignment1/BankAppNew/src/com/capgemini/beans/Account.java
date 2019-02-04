@@ -1,21 +1,25 @@
 package com.capgemini.beans;
 
-public class Account 
-{
+public class Account {
 	private int accountNumber;
 	private int amount;
+
 	public int getAccountNumber() {
 		return accountNumber;
 	}
+
 	public void setAccountNumber(int accountNumber) {
 		this.accountNumber = accountNumber;
 	}
+
 	public int getAmount() {
 		return amount;
 	}
+
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -24,6 +28,7 @@ public class Account
 		result = prime * result + amount;
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -39,7 +44,5 @@ public class Account
 			return false;
 		return true;
 	}
-	
-	
 
 }
