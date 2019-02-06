@@ -1,0 +1,18 @@
+
+public class DefaultConstructor {
+	int i;
+	char c;
+	String st;
+	//public DefaultConstructor() {}
+	
+
+	public static void main(String[] args) 
+	{
+		DefaultConstructor dc=new DefaultConstructor();
+				
+		System.out.println(dc.i);
+		System.out.println(dc.c);
+		System.out.println(dc.st);
+	}
+
+}
