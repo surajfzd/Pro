@@ -19,7 +19,7 @@ public class CollectionUtil {
 	static {
 		hm.put(41, new Trainer("Smitha", "Java", LocalDate.of(2000, 03, 13), LocalDate.of(2000, 03, 13), 5));
 		hm.put(22, new Trainer("Smitha", "Java", LocalDate.of(2000, 03, 13), LocalDate.of(2000, 03, 13), 2));
-		hm.put(43, new Trainer("Smitha", "Java", LocalDate.of(2000, 03, 13), LocalDate.of(2000, 03, 13), 3));
+		hm.put(43, new Trainer("Smitha", "Java", LocalDate.of(2000, 03, 13), LocalDate.of(2000, 03, 13), 4));
 	}
 
 }

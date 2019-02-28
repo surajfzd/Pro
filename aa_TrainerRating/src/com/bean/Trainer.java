@@ -4,20 +4,22 @@ import java.time.LocalDate;
 
 public class Trainer 
 {
-	String name;
-	String courseName;
-	LocalDate startDate;
-	LocalDate endDate;
-	int rating;
+
+	private String name;
+	private String courseName;
+	private LocalDate startDate;
+	private LocalDate endDate;
+	private int rating;
 	
 	
-	public Trainer() 
+	public Trainer() 										//Default constructor
 	{
 		super();
 	}
 
 	
-	public Trainer(String name, String courseName, LocalDate startDate, LocalDate endDate, int rating) {
+	public Trainer(String name, String courseName, LocalDate startDate, LocalDate endDate, int rating)    //Parameterized constructor to initialize values
+	{
 		super();
 		this.name = name;
 		this.courseName = courseName;
@@ -26,7 +28,7 @@ public class Trainer
 		this.rating = rating;
 	}
 
-
+	//Getter and Setter methods
 	public String getName() {
 		return name;
 	}
